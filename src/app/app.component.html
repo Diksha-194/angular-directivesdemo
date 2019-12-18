@@ -1,4 +1,25 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
+<h2>ngIf</h2>
+<p *ngIf="showParagraph; else hideParagraph">A paragraph needn’t be several sentences long, but might be only a sentence or two, or a single line of dialogue.</p>
+
+<ng-template class="" #hideParagraph>
+    Alternative Text
+    <button (click)="show()">Show</button>
+</ng-template>
+
+<button *ngIf="showParagraph" (click)="hide()">Hide</button>
+<hr>
+<hr>
+
+<h2>ngFor</h2>
+<ul *ngFor="let name of carnames">
+    <li>{{ name.cars }}</li>
+</ul>
+<hr>
+<hr>
+
+<h2>ngClass</h2>
+<p [ngClass]="blueColor ? 'blue' : 'yellow'">
+    A paragraph needn’t be several sentences long, but might be only a sentence or two, or a single line of dialogue.
 </p>
+<button (click)="blue()">Blue color</button>
+

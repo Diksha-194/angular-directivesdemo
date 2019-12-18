@@ -1,3 +1,15 @@
-p {
-  font-family: Lato;
+.none {
+    display: none
+}
+
+.blue {
+    color: blue;
+}
+
+.black {
+    color: black;
+}
+
+.yellow {
+    color: yellow;
 }
