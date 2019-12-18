@@ -18,8 +18,21 @@
 <hr>
 
 <h2>ngClass</h2>
-<p [ngClass]="blueColor ? 'blue' : 'yellow'">
+<p class="abc asd blue" [ngClass]="blueColor ? 'blue' : 'yellow'">
     A paragraph needn’t be several sentences long, but might be only a sentence or two, or a single line of dialogue.
 </p>
 <button (click)="blue()">Blue color</button>
+
+<table border=1>
+  <thead>
+    <th>Sr. No</th>
+    <th>Car name</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of carnames; let srNo = index">
+      <td>{{ srNo+1 }}</td>
+      <td>{{ car.cars }}</td>
+    </tr>
+  </tbody>
+</table>
 
