@@ -22,17 +22,29 @@
     A paragraph needn’t be several sentences long, but might be only a sentence or two, or a single line of dialogue.
 </p>
 <button (click)="blue()">Blue color</button>
+<hr>
+<hr>
 
 <table border=1>
   <thead>
     <th>Sr. No</th>
-    <th>Car name</th>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Website</th>
   </thead>
   <tbody>
-    <tr *ngFor="let car of carnames; let srNo = index">
+    <tr *ngFor="let details of users; let srNo = index">
       <td>{{ srNo+1 }}</td>
-      <td>{{ car.cars }}</td>
-    </tr>
+      <td>{{ details.name }}</td>
+      <td>{{ details.username }}</td>
+      <td>{{ details.email }}</td>
+      <td>{{ details.address | json}}</td>
+      <td>{{ details.phone }}</td>
+      <td>{{ details.website }}</td>
+    </tr>    
   </tbody>
 </table>
 
