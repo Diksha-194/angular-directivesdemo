@@ -41,7 +41,7 @@
       <td>{{ details.name }}</td>
       <td>{{ details.username }}</td>
       <td>{{ details.email }}</td>
-      <td>{{ details.address | json}}</td>
+      <td>{{ details.address.street }}, {{ details.address.suite }}, {{ details.address.city }}, {{ details.address.zipcode }}</td>
       <td>{{ details.phone }}</td>
       <td>{{ details.website }}</td>
     </tr>    

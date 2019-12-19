@@ -27,10 +27,10 @@ blueColor: boolean = false;
       username: 'Bret',
       email: 'Sincere@april.biz', 
       address: {
-        street: 'Victor Plains',
-        suite: 'Suite 879',
-        city: 'Wisokyburgh',
-        zipcode: '90566-7771'
+        street: 'Kulas Light',
+        suite: 'Apt. 556',
+        city: 'Gwenborough',
+        zipcode: '92998-3874'
       },     
       phone: '1-770-736-8031 x56442',
       website: 'hildegard.org'
